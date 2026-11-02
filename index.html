@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的第一个仓库 · 个人主页</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="brand">MY FIRST REPO</p>
+        <h1 id="site-title">我的第一个仓库</h1>
+        <p class="subtitle">— 用 Trae 生成 · 用 Git 管理 · 用 GitHub Pages 发布 —</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="card">
+        <h2>自我介绍</h2>
+        <p>
+          这里是我的个人主页。把它改成你自己的内容：姓名、班级、学号、兴趣爱好都可以。
+          改完记得在 Trae 里提交一次，写清楚这次改了什么。
+        </p>
+        <ul class="info-list">
+          <li><span>姓名</span><b id="info-name">张三</b></li>
+          <li><span>班级</span><b id="info-class">软件工程专升本 2 班</b></li>
+          <li><span>学号</span><b id="info-id">20240000</b></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>课程清单</h2>
+        <p>下面这张表是页面加载后由 JavaScript 自动渲染出来的，不是写死在 HTML 里的。</p>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>周次</th>
+              <th>主题</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody id="course-body">
+            <!-- 由 src/main.js 渲染 -->
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>动手试试</h2>
+        <p>点一下按钮，看看页面上会发生什么变化——这就是一次「代码改动」。</p>
+        <button id="like-btn" type="button">给我点赞：<span id="like-count">0</span></button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p id="build-time">构建时间：--</p>
+        <p class="tip">本页由 Vite 打包后通过 GitHub Pages 发布</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

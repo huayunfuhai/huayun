@@ -1,0 +1,29 @@
+# 依赖包：体积巨大，绝对不要上传
+node_modules
+.pnpm-store
+
+# 打包产物：部署交给 gh-pages 分支，不进源码仓库
+dist
+dist-ssr
+
+# 本地环境 / 密钥
+.env
+.env.local
+.env.*.local
+
+# 编辑器与系统文件
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 缓存
+.cache
